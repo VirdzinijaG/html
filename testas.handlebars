@@ -1,5 +1,26 @@
+{{! Template, kuris naudojamas su html turiniu}}
+
+<table>
+    {{#each zmones}}
+    <tr>
+        <td>
+            {{this.vardas}}
+        </td>
+        <td>
+            {{this.pavarde}}
+        </td>
+    </tr>
+    {{/each}}
+</table>
+
+
+
+{{!-- {{#each zmones}}
+
 <div>
-    {{vardas}}
-    <span>Vardas: {{vardas}} Pavarde: {{pavarde}}</span>
-    {{pavarde}}
+    {{this.vardas}}
+    <span>Vardas: {{this.vardas}} Pavarde: {{this.pavarde}}</span>
+    {{this.pavarde}}
 </div>
+
+{{/each}} --}}

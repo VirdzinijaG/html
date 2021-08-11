@@ -24,13 +24,21 @@ async function main() {
         {
             vardas: "Ona",
             pavarde: "Onaitiene"
+        },
+        {
+            vardas: "Vardenis",
+            pavarde: "Pavardenis"
         }
     ]
 
-    for (const zmogus of zm) { // for of pereina peer masyva
-        let rez = template(zmogus);
-        console.log(rez);
-    }
+    // for (const zmogus of zm) { // for of pereina peer masyva
+    //     let rez = template(zmogus);
+    //     console.log(rez);
+    // }
+
+    console.log(template({
+        zmones: zm
+    }));
 }
 
 main();
